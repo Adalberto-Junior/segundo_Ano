@@ -1,0 +1,55 @@
+May 11 16:22:28.888 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 11 16:22:28.888 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59316.
+May 11 16:22:29.383 HYPERVISOR: exec_cmd: hypervisor version 
+May 11 16:22:29.384 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Adalb\Desktop\segundo_Ano\RC2\Projeto2\Aula2VLan\project-files\dynamips 
+May 11 16:22:29.384 GENERAL: working_dir=C:\Users\Adalb\Desktop\segundo_Ano\RC2\Projeto2\Aula2VLan\project-files\dynamips
+May 11 16:22:29.384 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Adalb\Desktop\segundo_Ano\RC2\Projeto2\Aula2VLan\project-files\dynamips\2731c94c-fb41-4d03-842f-7e7b41c015a9 
+May 11 16:22:29.417 GENERAL: working_dir=C:\Users\Adalb\Desktop\segundo_Ano\RC2\Projeto2\Aula2VLan\project-files\dynamips\2731c94c-fb41-4d03-842f-7e7b41c015a9
+May 11 16:22:29.417 HYPERVISOR: exec_cmd: vm create R1 3 c3725 
+May 11 16:22:29.419 VM: VM R1 created.
+May 11 16:22:29.420 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5008 
+May 11 16:22:29.420 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+May 11 16:22:29.421 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+May 11 16:22:29.421 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+May 11 16:22:29.422 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 16:22:29.422 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60c09aa0 
+May 11 16:22:29.424 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Adalb/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 11 16:22:29.424 HYPERVISOR: exec_cmd: c3725 set_mac_addr R1 c203.549c.0000 
+May 11 16:22:29.425 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 11 16:22:29.425 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 16:22:29.426 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+May 11 16:22:45.980 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Adalb/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 11 16:22:56.707 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+May 11 16:22:56.707 VM: VM Ghost created.
+May 11 16:22:56.707 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Adalb/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+May 11 16:22:56.707 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 11 16:22:56.707 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\Adalb\Desktop\segundo_Ano\RC2\Projeto2\Aula2VLan\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-128.ghost 
+May 11 16:22:56.707 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 11 16:22:56.723 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+May 11 16:22:56.723 HYPERVISOR: exec_cmd: vm start Ghost 
+May 11 16:22:57.364 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 11 16:22:57.364 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 11 16:22:57.567 VM: VM Ghost shutdown.
+May 11 16:22:57.567 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+May 11 16:22:57.567 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 11 16:22:57.567 VM: VM Ghost destroyed.
+May 11 16:22:57.582 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+May 11 16:22:57.582 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Adalb\Desktop\segundo_Ano\RC2\Projeto2\Aula2VLan\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-128.ghost 
+May 11 16:22:57.582 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 16:22:57.582 HYPERVISOR: exec_cmd: vm set_config R1 configs\i3_startup-config.cfg 
+May 11 16:22:57.582 HYPERVISOR: exec_cmd: vm start R1 
+May 11 16:23:27.957 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 11 16:23:27.988 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 11 16:54:54.520 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 16:54:54.520 HYPERVISOR: exec_cmd: vm stop R1 
+May 11 16:54:54.614 VM: VM R1 shutdown.
+May 11 16:54:54.614 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 11 16:54:59.100 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 16:54:59.102 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 11 16:54:59.134 HYPERVISOR: exec_cmd: vm get_status R1 
+May 11 16:54:59.135 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 11 16:54:59.136 HYPERVISOR: exec_cmd: vm delete R1 
+May 11 16:54:59.137 VM: VM R1 destroyed.
+May 11 16:54:59.139 HYPERVISOR: exec_cmd: hypervisor stop 
+May 11 16:54:59.347 HYPERVISOR: Stopped.
+May 11 16:54:59.347 GENERAL: reset done.
